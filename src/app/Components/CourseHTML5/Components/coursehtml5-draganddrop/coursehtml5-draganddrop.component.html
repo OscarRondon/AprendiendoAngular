@@ -1,0 +1,47 @@
+<br>
+<p>Drag & Drop Images</p>
+<br>
+<div #Container id="Container" class="Container">
+    <div id="MiniContainer1" name="MiniContainer1" class="MiniContainer">
+        <div id="ImageBoxOrigin" name="ImageBoxOrigin" class="ContainerDaD" 
+            (dragstart)="BeginDrag($event)"
+            (drop)="Drop($event)"
+        >
+            <span></span>
+            <img id="Image" name="Image" src="/assets/CourseHTML5/Images/1.jpg" class="Images">
+        </div>
+
+        <div id="ImageBoxDest1" name="ImageBoxDest1" class="ContainerDaD"
+            (dragstart)="BeginDrag($event)"
+            (drop)="Drop($event)"
+        > 
+            <span></span>
+        </div>
+
+        <div id="ImageBoxDest2" name="ImageBoxDest2" class="ContainerDaD"
+            (dragstart)="BeginDrag($event)"
+            (drop)="Drop($event)"
+        >
+            <span></span>
+        </div>  
+
+        <div id="ImageBoxDest3" name="ImageBoxDest3" class="ContainerDaD"
+            (dragstart)="BeginDrag($event)"
+            (drop)="Drop($event)"
+        >  
+            <span></span>
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<p>Drop Files</p>
+<br>
+<div #Container2 id="Container" class="Container">
+    <div id="MiniContainer2" name="MiniContainer2" class="MiniContainer">
+        <div id="ArchiveDropZone" name="ImageBoxOrigin" class="ContainerDaD" (dragstart)="BeginDrag($event)" (drop)="DropArchive($event)">
+            <span>Drop Files Here</span>
+        </div>
+    </div>
+</div>

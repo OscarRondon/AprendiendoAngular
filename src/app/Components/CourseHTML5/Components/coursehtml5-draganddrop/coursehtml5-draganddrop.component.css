@@ -1,0 +1,30 @@
+html{
+    font-size: 62.5%;
+    font: normal 2.4em 'Roboto', Verdana, Geneva, sans-serif;
+}
+
+.Container{
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.MiniContainer{
+    border: dashed gray 0.1rem;
+}
+
+.ContainerDaD{
+    border: dashed grey 0.02rem;
+    display:inline-flex;
+    position:static ;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    width:20rem;
+    height: 10rem;
+}
+
+.Images{
+    border: dashed green 0.02rem;
+
+    width: 8rem;
+    height: 8rem;
+}

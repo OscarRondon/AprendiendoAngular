@@ -1,0 +1,26 @@
+<nav id="MainMenu">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#888" (click)="MenuIconClick()">
+        <g data-name="Layer 2">
+            <g data-name="menu-2">
+                <rect width="24" height="24" opacity="0" transform="rotate(180 12 12)"/>
+                <circle cx="4" cy="12" r="1"/><rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"/>
+                <rect width="18" height="2" x="3" y="16" rx=".94" ry=".94"/>
+                <rect width="18" height="2" x="3" y="6" rx=".94" ry=".94"/>
+            </g>
+        </g>
+    </svg>
+    <div id="Options" *ngIf="menuIconClick">
+        <ul >
+            <li><a [routerLink]="['/']" (click)="MenuIconClick()">Main</a></li>
+            <li><a [routerLink]="['./']" (click)="MenuIconClick()">Home</a></li>
+            <li><a [routerLink]="['./Overview']" (click)="MenuIconClick()">General Overview [HTML5, CSS3, JavaScript]</a></li>
+            <li><a [routerLink]="['./Forms']" (click)="MenuIconClick()">Forms</a></li>
+            <li><a [routerLink]="['./Canvas']" (click)="MenuIconClick()">Canvas</a></li>
+            <li><a [routerLink]="['./DragAndDrop']" (click)="MenuIconClick()">Drag & Drop</a></li>
+            <li><a [routerLink]="['./GeoLocation']" (click)="MenuIconClick()">GeoLocation</a></li>
+            <li><a [routerLink]="['./WebStorage']" (click)="MenuIconClick()">Web Storage</a></li>
+            <li><a [routerLink]="['./IndexedDB']" (click)="MenuIconClick()">Indexed DB</a></li>
+            <li><a [routerLink]="['./Files']" (click)="MenuIconClick()">Files</a></li>
+        </ul> 
+    </div>
+</nav>

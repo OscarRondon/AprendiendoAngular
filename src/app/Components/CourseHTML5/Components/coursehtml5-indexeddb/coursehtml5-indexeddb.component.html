@@ -1,0 +1,25 @@
+<p>Idexed DB</p>
+<div #Container id="Container" class="Container">
+    <div id="MiniContainer" name="MiniContainer" class="MiniContainer">
+        <form [formGroup]="myForm" id="myForm" name="myForm" method="GET" >
+            <div>
+                <div class="inputGroup">
+                    Key:&nbsp;<input type="text" formControlName="Key" id="Key" name="Key" autocomplete="off" autofocus >
+                </div>
+                <div class="inputGroup">
+                    Tittle:&nbsp;<input type="text" formControlName="Tittle" id="Tittle" name="Tittle" autocomplete="off" autofocus >
+                </div>
+                <div class="inputGroup">
+                    Year:&nbsp;<input type="text" formControlName="Year" id="Year" name="Year" autocomplete="off" autofocus >
+                </div>
+                <div class="inputGroup">
+                    <input type="submit" id="btn_Send" name="btn_Send" value="Submit" (click)="Submit()">
+                </div>
+                <div class="inputGroup">
+                    <input type="submit" id="btn_ViewData" name="btn_ViewData" value="View Data" (click)="ViewData()">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+

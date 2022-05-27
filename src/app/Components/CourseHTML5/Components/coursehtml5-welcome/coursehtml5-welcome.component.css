@@ -1,0 +1,11 @@
+html{
+    font-size: 62.5%;
+    font: normal 2.4em 'Roboto', Verdana, Geneva, sans-serif;
+}
+
+.Container{
+    width: auto;
+    margin: 15% auto;
+    text-align: center;
+    font-size: 2rem;
+}

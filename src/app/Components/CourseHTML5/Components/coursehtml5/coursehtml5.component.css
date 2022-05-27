@@ -1,0 +1,120 @@
+/*
+La prioridad de los selectores de menor a mayor es:
+    1. Etiqueta <nombre de la etiqueta> (e.g. div)
+    2. Clase <se indica con punto (.)> (e.g. .SelectorClase)
+    3. Id <se indica con numeral (#)> (e.g. #SelectorId)
+*/
+
+/*
+Main labels setup
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote, div
+{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+   }
+   table { border-collapse: collapse; border-spacing: 0; }
+   td, th, caption { font-weight: normal; text-align: left; }
+   img, fieldset { border: 0; }
+   ol { padding-left: 1.4em; list-style: decimal; }
+   ul { padding-left: 1.4em; list-style:square; }
+   q:before, q:after { content:''; 
+}
+*/
+
+/*Selector*/
+
+figure{
+    display: inline-block;
+    border-radius: 15px;
+}
+
+figcaption{
+    margin-top: 5px;
+    font: normal 0.8em Verdana, Geneva, sans-serif;
+}
+
+figure img{
+    border: solid rgb(111, 109, 109) 5px;
+    background: rgb(111, 109, 109);
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: rgb(55, 50, 50) 5px 5px 15px;
+}
+
+figure img:hover{
+    transform: scale(1.1);
+    box-shadow: rgb(0, 60, 255) 10px 10px 15px;
+}
+
+/*Class*/
+.videos{
+    display: flex;
+    margin: auto;
+    width: 40%;
+    margin-bottom: 5px;
+    background: black;
+}
+
+/*ID*/
+
+#main
+{
+    border: dashed gray 2px;
+}
+
+#principalHeader{
+    width: 35%;
+    margin: 15px auto;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(top,rgb(19, 95, 172), rgb(177, 213, 248));
+    box-shadow: mediumblue 5px 5px 15px;
+    border: solid rgb(255, 255, 255) 2px;
+    font: normal 2.4em Verdana, Geneva, sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(73, 71, 71) 3px 5px 5px;
+}
+
+#secondlHeader{
+    font: bolder 1.4em Verdana, Geneva, sans-serif;
+    margin: 15px auto;
+}
+
+#sectionBox{
+    width: 90%;
+    margin: 15px auto;
+    align-content: center;
+    border-top:dashed dimgray 3px;
+}
+
+#footerBox{
+    font: normal 1em Verdana, Geneva, sans-serif;
+    color: dimgray;
+}
+
+#navigation{
+    display:flex;
+    margin: auto;
+    width: 40%;
+}
+
+#progressbar{
+    /*border: solid rgb(0, 0, 0) 1px;*/
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 25px;
+    margin-left: 5px;
+    margin-top: -3px;
+}
+
+#progress{
+    /*border: dashed gray;*/
+    width: 99%;
+    height: 30px;
+    margin-top: -2px;
+}
+
+
+/* fin del reset CSS */

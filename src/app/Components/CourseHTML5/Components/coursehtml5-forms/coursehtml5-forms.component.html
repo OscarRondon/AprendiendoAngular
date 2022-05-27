@@ -1,0 +1,63 @@
+<div id="content">
+    <h1>HTML5 Forms</h1>
+    <div #main id="main">
+        <form [formGroup]="myForm" id="myForm" name="myForm" method="GET" >
+            <div>
+                <div class="inputGroup">
+                    eMail:&nbsp;<input type="email" formControlName="eMail" id="eMail" name="eMail" autocomplete="off" placeholder="email@domain.com" autofocus >
+                    <span *ngIf="!myForm.controls['eMail'].touched">
+                        *
+                    </span>
+                    <span *ngIf="myForm.controls['eMail'].invalid && myForm.controls['eMail'].touched">
+                        invalid input
+                    </span>
+                </div>
+                <div class="inputGroup">
+                    Search:&nbsp;<input type="search" formControlName="Search" id="Search" name="Search" autocomplete="off">
+                    <span *ngIf="!myForm.controls['eMail'].touched">
+                        *
+                    </span>
+                    <span *ngIf="myForm.controls['Search'].invalid && myForm.controls['Search'].touched">
+                        invalid input
+                    </span>
+                </div>
+                <div class="inputGroup">
+                    Pattern:&nbsp;<input pattern="[A-Za-z]{3}" formControlName="Pattern" id="Pattern" name="Pattern" maxlength="3" autocomplete="off">
+                    <span *ngIf="myForm.controls['Pattern'].invalid">
+                        invalid input
+                    </span>
+                </div>
+                <div class="inputGroup">
+                    Date:&nbsp;<input type="date" formControlName="Date" id="Date" name="Date" autocomplete="off">
+                </div>
+                <div class="inputGroup">
+                    Date:&nbsp;<input type="time" formControlName="Time" id="Date" name="Time" autocomplete="Time">
+                </div>
+                <div class="inputGroup">
+                    Number:&nbsp;<input type="number" formControlName="Number" id="Number" name="Number" autocomplete="Number" step="0.0001" autocomplete="off">
+                </div>
+                <div class="inputGroup">
+                    Range:&nbsp;<input type="range" formControlName="Range" id="Range" name="Range" autocomplete="off">
+                </div>
+                <div class="inputGroup">
+                    DataList:&nbsp;<input type="text" formControlName="DataList" id="DataList" name="DataList" list="values" autocomplete="off">
+                    <datalist id="values">
+                        <option value="111111" label=" Option #1"></option>
+                        <option value="222222" label=" Option #2"></option>
+                        <option value="333333" label=" Option #3"></option>
+                    </datalist>
+                </div>
+                <div class="inputGroup">
+                    <select formControlName="Select" id="Select">
+                        <option value="111111">#1</option>
+                        <option value="222222">#2</option>
+                        <option value="333333">#3</option>
+                    </select>
+                </div>
+                <div class="inputGroup">
+                    <input type="submit" id="btn_Send" name="btn_Send" value="Submit" (click)="Submit()">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
