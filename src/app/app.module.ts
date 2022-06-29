@@ -31,6 +31,7 @@ import { Coursehtml5GeolocationComponent } from './Components/CourseHTML5/Compon
 import { Coursehtml5WebstorageComponent } from './Components/CourseHTML5/Components/coursehtml5-webstorage/coursehtml5-webstorage.component';
 import { Coursehtml5IndexeddbComponent } from './Components/CourseHTML5/Components/coursehtml5-indexeddb/coursehtml5-indexeddb.component';
 import { Coursehtml5FilesComponent } from './Components/CourseHTML5/Components/coursehtml5-files/coursehtml5-files.component';
+import { Coursehtml5ApicomunicationComponent } from './Components/CourseHTML5/Components/coursehtml5-apicomunication/coursehtml5-apicomunication.component';
 
 const routes: Routes = customRoutes;
 
@@ -58,6 +59,7 @@ const routes: Routes = customRoutes;
     Coursehtml5WebstorageComponent,
     Coursehtml5IndexeddbComponent,
     Coursehtml5FilesComponent,
+    Coursehtml5ApicomunicationComponent,
   ],
   imports: [
     BrowserModule,

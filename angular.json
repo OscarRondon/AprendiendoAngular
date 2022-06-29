@@ -26,7 +26,8 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/app/Components/CourseHTML5/Components/coursehtml5-files/coursehtml5-files.FileManage.js"
+              "src/app/Components/CourseHTML5/Components/coursehtml5-files/coursehtml5-files.FileManage.js",
+              "src/app/Components/CourseHTML5/Components/coursehtml5-files/prueba.js"
             ]
           },
           "configurations": {

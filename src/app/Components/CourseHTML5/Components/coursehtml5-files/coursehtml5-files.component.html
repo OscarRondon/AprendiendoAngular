@@ -1,21 +1,22 @@
 <p>Api Files</p>
 <div #Container id="Container" class="Container">
+    
     <div id="MiniContainer" name="MiniContainer" class="MiniContainer">
         <p>Files selection</p>
         <hr>
         <form [formGroup]="myForm" id="myForm" name="myForm" method="GET" >
             <div>
                 <div class="inputGroup">
-                    Key:&nbsp;<input type="text" formControlName="Key" id="Key" name="Key" autocomplete="off" autofocus >
+                    Key:&nbsp;<input title="Key" type="text" formControlName="Key" id="Key" name="Key" autocomplete="off" autofocus >
                 </div>
                 <div class="inputGroup">
-                    Tittle:&nbsp;<input type="text" formControlName="Tittle" id="Tittle" name="Tittle" autocomplete="off" autofocus >
+                    Tittle:&nbsp;<input title="Tittle" type="text" formControlName="Tittle" id="Tittle" name="Tittle" autocomplete="off" autofocus >
                 </div>
                 <div class="inputGroup">
-                    Year:&nbsp;<input type="text" formControlName="Year" id="Year" name="Year" autocomplete="off" autofocus >
+                    Year:&nbsp;<input title="Year" type="text" formControlName="Year" id="Year" name="Year" autocomplete="off" autofocus >
                 </div>
                 <div class="inputGroup">
-                    <input type="file" id="btn_GetFile" name="btn_GetFile" value="Get File" (change)="GetFile($event)">
+                    <input title="btn_GetFile"  type="file" id="btn_GetFile" name="btn_GetFile" value="Get File" (change)="GetFile($event)">
                 </div>
                 <div class="inputGroup">
                     <input type="submit" id="btn_Send" name="btn_Send" value="Submit" (click)="Submit()">
@@ -27,13 +28,13 @@
         </form>
     </div>
 
-    <div id="MiniContainer" name="MiniContainer" class="MiniContainer">
+    <div id="MiniContainer2" name="MiniContainer" class="MiniContainer">
         <p>Directories Management</p>
         <hr>
         <form [formGroup]="myForm2" id="myFor2" name="myForm2" method="GET" >
             <div>
                 <div class="inputGroup">
-                    Directory name:&nbsp;<input type="text" formControlName="DirName" id="DirName" name="DirName" autocomplete="off" autofocus >
+                    Directory name:&nbsp;<input title="DirNameForm2" type="text" formControlName="DirNameForm2" id="DirNameForm2" name="DirNameForm2" autocomplete="off" autofocus >
                 </div>
                 <div class="inputGroup">
                     <input type="submit" id="btn_Send2" name="btn_Send2" value="Submit" (click)="Submit2()">
@@ -51,19 +52,19 @@
         </form>
     </div>
 
-    <div id="MiniContainer" name="MiniContainer" class="MiniContainer">
+    <div id="MiniContainer3" name="MiniContainer" class="MiniContainer">
         <p>File Management</p>
         <hr>
         <form [formGroup]="myForm3" id="myForm3" name="myForm3" method="GET" >
             <div>
                 <div class="inputGroup">
-                    File name:&nbsp;<input type="text" formControlName="FileName" id="FileName" name="FileName" autocomplete="off" autofocus >
+                    File name:&nbsp;<input title="FileNameForm3" type="text" formControlName="FileNameForm3" id="FileNameForm3" name="FileNameForm3" autocomplete="off" autofocus >
                 </div>
                 <div class="inputGroup">
-                    Directory Origin:&nbsp;<input type="text" formControlName="DirNameOrigin" id="DirNameOrigin" name="DirNameOrigin" autocomplete="off" autofocus >
+                    Directory Origin:&nbsp;<input title="DirNameOrigin" type="text" formControlName="DirNameOrigin" id="DirNameOrigin" name="DirNameOrigin" autocomplete="off" autofocus >
                 </div>
                 <div class="inputGroup">
-                    Directory Dest:&nbsp;<input type="text" formControlName="DirNameDest" id="DirNameDest" name="DirNameDest" autocomplete="off" autofocus >
+                    Directory Dest:&nbsp;<input title="DirNameDest" type="text" formControlName="DirNameDest" id="DirNameDest" name="DirNameDest" autocomplete="off" autofocus >
                 </div>
                 <div class="inputGroup">
                     <input type="submit" id="btn_Send3" name="btn_Send3" value="Submit" (click)="Submit3()">
@@ -81,19 +82,19 @@
         </form>
     </div>
 
-    <div id="MiniContainer" name="MiniContainer" class="MiniContainer">
+    <div id="MiniContainer4" name="MiniContainer" class="MiniContainer">
         <p>File Write</p>
         <hr>
         <form [formGroup]="myForm4" id="myForm4" name="myForm4" method="GET" >
             <div>
                 <div class="inputGroup">
-                    File name:&nbsp;<input type="text" formControlName="FileName" id="FileName" name="FileName" autocomplete="off" autofocus >
+                    File name:&nbsp;<input title="FileName" type="text" formControlName="FileName" id="FileName" name="FileName" autocomplete="off" autofocus >
                 </div>
                 <div class="inputGroup">
-                    Directory:&nbsp;<input type="text" formControlName="DirName" id="DirName" name="DirName" autocomplete="off" autofocus >
+                    Directory:&nbsp;<input title="DirName" type="text" formControlName="DirName" id="DirName" name="DirName" autocomplete="off" autofocus >
                 </div>
                 <div class="inputGroup">
-                    Inner Text:&nbsp;<textarea cols="50" rows="10" formControlName="InnerText" id="InnerText" name="InnerText" autocomplete="off" autofocus ></textarea>
+                    Inner Text:&nbsp;<textarea title="InnerText" cols="50" rows="10" formControlName="InnerText" id="InnerText" name="InnerText" autocomplete="off" autofocus ></textarea>
                 </div>
                 <div class="inputGroup">
                     <input type="submit" id="btn_ReadFile" name="btn_ReadFile" value="ReadFile" (click)="btn_ReadFile()">

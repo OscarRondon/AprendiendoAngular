@@ -20,6 +20,7 @@ import { Coursehtml5GeolocationComponent } from "../Components/CourseHTML5/Compo
 import { Coursehtml5WebstorageComponent } from "../Components/CourseHTML5/Components/coursehtml5-webstorage/coursehtml5-webstorage.component";
 import { Coursehtml5IndexeddbComponent } from "../Components/CourseHTML5/Components/coursehtml5-indexeddb/coursehtml5-indexeddb.component";
 import { Coursehtml5FilesComponent } from "../Components/CourseHTML5/Components/coursehtml5-files/coursehtml5-files.component";
+import { Coursehtml5ApicomunicationComponent } from "../Components/CourseHTML5/Components/coursehtml5-apicomunication/coursehtml5-apicomunication.component";
 
 export const customRoutes: Routes = [
     { path: '', component: AngularMainComponent },
@@ -45,7 +46,8 @@ export const customRoutes: Routes = [
         {path: 'GeoLocation', component: Coursehtml5GeolocationComponent},
         {path: 'WebStorage', component: Coursehtml5WebstorageComponent},
         {path: 'IndexedDB', component: Coursehtml5IndexeddbComponent},
-        {path: 'Files', component: Coursehtml5FilesComponent}
+        {path: 'Files', component: Coursehtml5FilesComponent},
+        {path: 'ApiComunication', component: Coursehtml5ApicomunicationComponent}
       ]
     },
   ];
